@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Hero: React.FC = () => {
   return (
-    <section className="bg-[#f8edeb] min-h-[80vh] flex items-center justify-center px-6 md:px-12 lg:px-20">
+    <section className="bg-[#f8edeb] min-h-[80vh] flex items-center justify-center px-6 md:px-12 lg:px-20 mb-10 md:mb-0">
       <div className="max-w-5xl text-center">
         {/* Heading */}
         <h1 className="text-4xl md:text-6xl font-bold text-gray-800 leading-tight">
@@ -19,9 +20,12 @@ const Hero: React.FC = () => {
         {/* CTA Buttons */}
         <div className="mt-10 flex flex-col md:flex-row justify-center gap-4">
           {/* Get Started Button */}
-          <button className="px-8 py-3 text-lg font-medium rounded-md bg-gradient-to-r from-[#392f5a] via-[#6247aa] to-[#03045e] text-white hover:opacity-90">
+          <Link
+            to="/dashboard"
+            className="px-8 py-3 text-lg font-medium rounded-md bg-gradient-to-r from-[#392f5a] via-[#6247aa] to-[#03045e] text-white hover:opacity-90"
+          >
             Get Started. It’s FREE
-          </button>
+          </Link>
           {/* Secondary Text */}
           <span className="text-gray-600 text-sm md:text-base">
             Free Forever. No Credit Card Required.
