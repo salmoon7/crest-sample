@@ -137,6 +137,7 @@ const Header: React.FC = () => {
                   className="text-gray-700 hover:text-gray-900"
                 >
                   Features
+                  <ChevronDown />
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="w-64">
@@ -163,6 +164,7 @@ const Header: React.FC = () => {
                   className="text-gray-700 hover:text-gray-900"
                 >
                   Solutions
+                  <ChevronDown />
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="w-48">
@@ -179,6 +181,7 @@ const Header: React.FC = () => {
                   className="text-gray-700 hover:text-gray-900"
                 >
                   Pricing
+                  <ChevronDown />
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="w-48">
@@ -193,12 +196,18 @@ const Header: React.FC = () => {
             </a>
 
             {/* Login & Sign Up */}
-            <button className="w-full px-4 py-2 border border-gray-300 rounded-md bg-white hover:bg-gray-100">
+            <Link
+              to="/login"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md bg-white hover:bg-gray-100"
+            >
               Login
-            </button>
-            <button className="w-full px-4 py-2 rounded-md bg-gradient-to-r from-[#392f5a] via-[#6247aa] to-[#03045e] text-white">
+            </Link>
+            <Link
+              to="/signup"
+              className="w-full px-4 py-2 rounded-md bg-gradient-to-r from-[#392f5a] via-[#6247aa] to-[#03045e] text-white"
+            >
               Sign Up
-            </button>
+            </Link>
           </nav>
         </div>
       )}
